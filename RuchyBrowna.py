@@ -46,8 +46,6 @@ def ruchyBrowna():
         tablicaWartosci.append(wspolrzednaY)
 
     zapiszDaneDoPliku(tablicaWartosci, iloscRuchow)
-    print(wspolrzednaX)
-    print(wspolrzednaY)
     wektorPrzesuniecia = np.fabs(np.sqrt(wspolrzednaX ** 2 + wspolrzednaY ** 2))
     print("Wektor przesuniecia: {:.2f}".format(wektorPrzesuniecia))
 
@@ -71,12 +69,14 @@ def wczytajRuchyBrownaZPliku():
 
     osOdcietych = [0]
     osRzednych = [0]
+    ile = 0
 
     try:
         plik = open(nazwaPliku, 'r')
         liniaPliku = []
         linia = plik.readline()
         while linia != "":
+            ile = ile + 1
             linia = linia.replace("\n", "")
             liniaPliku.append(linia)
             linia = plik.readline()
@@ -84,13 +84,14 @@ def wczytajRuchyBrownaZPliku():
         print("Plik nie istnieje")
     else:
         i = 0
-        while i < 9:
+        while i < ile:
             osOdcietych.append(float(liniaPliku[i]))
             i = i + 1
             osRzednych.append(float(liniaPliku[i]))
+            i = i + 1
 
-        wspolrzednaX = float(liniaPliku[i - 1])
-        wspolrzednaY = float(liniaPliku[i])
+        wspolrzednaX = float(liniaPliku[i - 2])
+        wspolrzednaY = float(liniaPliku[i - 1])
         wektorPrzesuniecia = np.fabs(np.sqrt(pow(float(wspolrzednaX), 2) + pow(float(wspolrzednaY), 2)))
         print("Wektor przesuniecia: {:.2f}".format(wektorPrzesuniecia))
         plik.close()
@@ -103,15 +104,20 @@ def menu():
     print("1. Symulacja Ruchow Browna")
     print("2. Symulacja Ruchow Browna z danymi przygotowanymi w pliku")
     print("9. Koniec Programu")
+
+
+def main():
+    menu()
     wybor = int(input("Wybierz opcje z menu "))
     if (wybor == 1):
         ruchyBrowna()
     elif (wybor == 2):
         wczytajRuchyBrownaZPliku()
     elif (wybor == 9):
-        exit(0)
+        return "Koniec dzialania programu"
     else:
         print("Przypominam ze numer mial byc 1, 2 lub 9")
 
 
-menu()
+# main
+main()
