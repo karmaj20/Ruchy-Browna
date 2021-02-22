@@ -12,10 +12,10 @@ be determined by a random angle. The program also saves itself to a text file, w
 written using functional programming but with clean code rules so shat you can easily understand what is happening one by one.
 
 Tools used :
-NumPy - scientifc calculations, mathematical functions '\n'
-Matplotlib.pyplot - creating plots '\n'
-Random module - generating pseudo-random numbers to randomiza the coordinate angle '\n'
-Time module - generating pseudo-random numbers '\n'
-Exception handling - preventing errors '\n'
+NumPy - scientifc calculations, mathematical functions <br />
+Matplotlib.pyplot - creating plots <br />
+Random module - generating pseudo-random numbers to randomiza the coordinate angle <br />
+Time module - generating pseudo-random numbers <br />
+Exception handling - preventing errors <br />
 
 
