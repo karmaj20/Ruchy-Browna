@@ -11,5 +11,11 @@ In each move the the parcicle moves by a constant vector of length |r| given by 
 be determined by a random angle. The program also saves itself to a text file, which can later be read by selecting the appropriate option in the menu. The whole program was 
 written using functional programming but with clean code rules so shat you can easily understand what is happening one by one.
 
+Tools used :
+NumPy - scientifc calculations, mathematical functions
+Matplotlib.pyplot - creating plots
+Random module - generating pseudo-random numbers to randomiza the coordinate angle
+Time module - generating pseudo-random numbers
+Exception handling - preventing errors
 
 
