@@ -1,4 +1,4 @@
-<h2<Brown Motion</h2>
+<h2>Brown Motion</h2>
 
 <p>The Brown-Motion program is a computer simulation that calculates the coordinates of points simulating Brownian motion and then generates a plot of particle displacement. Plot a leading vector (displacement), saves the data to a file and gives the possibility to read data from the file.</p>
 
