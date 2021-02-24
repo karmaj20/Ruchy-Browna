@@ -10,11 +10,11 @@
 
 <p>In each move the the parcicle moves by a constant vector of length |r| given by the user also by the number of steps given by the user. The direction, on the other hand, will be determined by a random angle. The program also saves itself to a text file, which can later be read by selecting the appropriate option in the menu. The whole program was written using functional programming but with clean code rules so shat you can easily understand what is happening one by one. </p>
 
-***Tools used :
+Tools used :
 - NumPy -> scientifc calculations, mathematical functions <br>
 - Matplotlib.pyplot -> creating plots <br>
 - Random module -> generating pseudo-random numbers to randomiza the coordinate angle <br>
 - Time module -> generating pseudo-random numbers <br>
-- Exception handling -> preventing errors*** <br>
+- Exception handling -> preventing errors <br>
 
 
