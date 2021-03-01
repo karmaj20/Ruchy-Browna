@@ -10,6 +10,10 @@
 
 <p>In each move the the parcicle moves by a constant vector of length |r| given by the user also by the number of steps given by the user. The direction, on the other hand, will be determined by a random angle. The program also saves itself to a text file, which can later be read by selecting the appropriate option in the menu. The whole program was written using functional programming but with clean code rules so shat you can easily understand what is happening one by one. </p>
 
+<p>Example use with a large number of steps</p>
+
+![plot](/IMGreadme/brownMotion.png)
+
 Tools used :
 - NumPy -> scientifc calculations, mathematical functions <br>
 - Matplotlib.pyplot -> creating plots <br>
@@ -17,4 +21,8 @@ Tools used :
 - Time module -> generating pseudo-random numbers <br>
 - Exception handling -> preventing errors <br>
 
+<p>Two examples shows that reading from file works fine</p>
 
+![plot](/IMGreadme/brownMotion2.png)
+
+![plot](/IMGreadme/brownMotion3.png)
